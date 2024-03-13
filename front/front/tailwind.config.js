@@ -8,6 +8,17 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.container-center': {
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: '90%', // 100% - (5% + 5%)
+        },
+      };
 
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
+}
