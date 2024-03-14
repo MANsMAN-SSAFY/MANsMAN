@@ -1,24 +1,3 @@
-/** @type {import('tailwindcss').Config} */
-
-export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        '.container-center': {
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: '90%', // 100% - (5% + 5%)
-        },
-      };
-
-      addUtilities(newUtilities, ['responsive', 'hover']);
-    },
-  ],
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:875f6e07556c31ed98401f87a1e6f21b5c6edf062423ff4dc0fceba9e71a3494
+size 618
