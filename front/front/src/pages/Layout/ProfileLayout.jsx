@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { ScrollRestoration } from "react-router-dom";
 
-export default function CommunityLayout() {
+export default function ProfileLayout() {
   return (
     <div>
       <ScrollRestoration />
