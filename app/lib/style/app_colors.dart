@@ -6,4 +6,5 @@ class AppColors{
   static const tag = Color(0xffD9D9D9);
   static const black = Color(0xff001000);
   static const iconBlack = Color(0xff49454F);
+  static const red = Color(0xffFF0000);
 }
