@@ -15,8 +15,4 @@ public class TokenDto {
     private String accessToken;
     private String refreshToken;
     private Long accessTokenExpiresIn;
-    private Long remainingTime;
-
-    public TokenDto(String accessToken, String value, long remainingTime) {
-    }
 }
