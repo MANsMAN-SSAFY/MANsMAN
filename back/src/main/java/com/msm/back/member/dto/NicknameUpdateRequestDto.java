@@ -1,11 +1,9 @@
 package com.msm.back.member.dto;
 
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 public class NicknameUpdateRequestDto {
     private String nickname;

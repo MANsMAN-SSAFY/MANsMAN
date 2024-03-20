@@ -2,9 +2,11 @@ package com.msm.back.member.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
 @AllArgsConstructor
-public class NicknameUpdateResponseDto {
-    private String nickname;
+public class PrivacyResponseDto {
+    private boolean privacy;
 }

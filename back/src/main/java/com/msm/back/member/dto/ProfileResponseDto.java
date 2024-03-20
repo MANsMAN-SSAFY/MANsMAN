@@ -16,5 +16,5 @@ public class ProfileResponseDto {
     private String imgUrl;
     private SkinTypeDto skinType;
     private String faceShape;
-    private boolean isPrivate;
+    private boolean privacy;
 }
