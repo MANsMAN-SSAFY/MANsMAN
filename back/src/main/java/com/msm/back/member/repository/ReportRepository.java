@@ -4,8 +4,8 @@ import com.msm.back.member.entity.Member;
 import com.msm.back.member.entity.Report;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
+import java.util.List;
 
 public interface ReportRepository extends JpaRepository<Report, Long> {
-    Optional<Report> findByMember(Member member);
+    List<Report> findByMemberOrderByCreatedAtDesc(Member member);
 }
