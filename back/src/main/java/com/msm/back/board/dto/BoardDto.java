@@ -1,7 +1,7 @@
 package com.msm.back.board.dto;
 
 
-import com.msm.back.member.entity.Member;
+import com.msm.back.member.dto.ProfileResponseDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,7 +15,7 @@ public class BoardDto {
     private Long id;
     private String title;
     private String content;
-    private Member member;
+    private ProfileResponseDto writer;
     private Long viewCnt;
     private Long likeCnt;
     private Long commentCnt;
