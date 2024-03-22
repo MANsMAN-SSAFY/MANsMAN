@@ -1,15 +1,3 @@
-package com.msm.back.board.controller;
-
-import com.msm.back.board.service.BoardService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-@RequiredArgsConstructor
-@RequestMapping("/api/boards")
-public class BoardController {
-    private final BoardService boardService;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2587d8015e9b74ca42e899252cd4540ccb59fe3310631f205ea65346ad866be
+size 3141
