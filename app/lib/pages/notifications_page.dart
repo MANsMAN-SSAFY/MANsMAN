@@ -1,5 +1,5 @@
+import 'package:app/common/default_layout/default_layout.dart';
 import 'package:flutter/material.dart';
-import 'package:app/components/toolbar.dart';
 import 'package:app/components/notification/notification.dart';
 
 class NotificationsPage extends StatelessWidget {
@@ -7,9 +7,9 @@ class NotificationsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: Toolbar(title: '알람'),
-      body: NotificationComponent(),
+    return DefaultLayout(
+      title: '알림',
+      child: NotificationComponent(),
     );
   }
 }
