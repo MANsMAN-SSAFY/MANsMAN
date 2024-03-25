@@ -17,5 +17,5 @@ public class ReportDto {
     private int blackhead;
     private int age;
     private SkinTypeEnum skinType;
-    private CommonCode faceShapeCode;
+    private String faceShape;
 }
