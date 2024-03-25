@@ -1,6 +1,6 @@
 package com.msm.back.auth.dto;
 
-import com.msm.back.member.entity.Member;
+import com.msm.back.db.entity.Member;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
