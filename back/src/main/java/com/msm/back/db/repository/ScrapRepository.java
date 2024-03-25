@@ -1,6 +1,6 @@
-package com.msm.back.board.repository;
+package com.msm.back.db.repository;
 
-import com.msm.back.board.entity.Scrap;
+import com.msm.back.db.entity.Scrap;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
