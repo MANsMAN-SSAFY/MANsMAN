@@ -1,15 +1,3 @@
-import 'package:app/common/default_layout/default_layout.dart';
-import 'package:flutter/material.dart';
-import 'package:app/components/notification/notification.dart';
-
-class NotificationsPage extends StatelessWidget {
-  const NotificationsPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return DefaultLayout(
-      title: '알림',
-      child: NotificationComponent(),
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5872b9b6db915b4a7e7101fa9844bc4eb9cc73f4e38a05d52fb6110c2b725c2
+size 1139
