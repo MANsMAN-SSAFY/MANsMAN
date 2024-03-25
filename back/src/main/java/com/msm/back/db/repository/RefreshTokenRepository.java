@@ -1,6 +1,6 @@
-package com.msm.back.auth.repository;
+package com.msm.back.db.repository;
 
-import com.msm.back.auth.entity.RefreshToken;
+import com.msm.back.db.entity.RefreshToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
