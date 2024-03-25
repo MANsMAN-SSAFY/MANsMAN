@@ -1,6 +1,3 @@
-numpy==1.26.4
-pandas==2.2.1
-python-dateutil==2.9.0.post0
-pytz==2024.1
-six==1.16.0
-tzdata==2024.1
+version https://git-lfs.github.com/spec/v1
+oid sha256:78238573c1a8b68d9b07717b7684cfe4b8ca7aa8dfcda533aa758d0588b633e3
+size 1725
