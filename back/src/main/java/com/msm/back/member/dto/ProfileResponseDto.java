@@ -16,7 +16,6 @@ public class ProfileResponseDto {
     private String nickname;
     private LocalDate birthday;
     private String imgUrl;
-    private SkinTypeDto skinType;
-    private String faceShape;
     private boolean privacy;
+    private ReportDto report;
 }
