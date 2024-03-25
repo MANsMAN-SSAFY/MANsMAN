@@ -1,6 +1,6 @@
-package com.msm.back.product.repository;
+package com.msm.back.db.repository;
 
-import com.msm.back.product.entity.Product;
+import com.msm.back.db.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

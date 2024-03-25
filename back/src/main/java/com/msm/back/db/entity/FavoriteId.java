@@ -1,4 +1,4 @@
-package com.msm.back.board.entity;
+package com.msm.back.db.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,10 +11,10 @@ import java.io.Serializable;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ScrapId implements Serializable {
+public class FavoriteId implements Serializable {
 
     private Long member;
 
-    private Long board;
+    private Long product;
 
 }
