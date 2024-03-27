@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MyProductResponseDto {
-    private Long id;
     private Long memberId;
     private Long productId;
     private int cnt;
