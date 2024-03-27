@@ -1,22 +1,3 @@
-package com.msm.back.product.service;
-
-import java.util.List;
-
-import org.springframework.stereotype.Service;
-
-import com.msm.back.db.repository.ProductRepository;
-import com.msm.back.product.dto.ProductListResponseDto;
-
-import lombok.RequiredArgsConstructor;
-
-@Service
-@RequiredArgsConstructor
-public class ProductService {
-
-	private final ProductRepository productRepository;
-
-	public static List<ProductListResponseDto> findAll() {
-
-		return null;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c59692320c293e44fe4717677a988001b199dcfea40510bda4beffd2850525d
+size 2081
