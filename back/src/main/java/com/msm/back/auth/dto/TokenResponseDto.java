@@ -14,4 +14,5 @@ public class TokenResponseDto {
     private String accessToken;
     private String refreshToken;
     private Long accessTokenExpiresIn;
+    private String notificationToken;
 }
