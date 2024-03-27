@@ -16,5 +16,5 @@ public class ProductListRequestDto {
 
 	private Long lastId;
 
-	private Long pageSize;
+	private int pageSize;
 }
