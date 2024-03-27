@@ -12,11 +12,14 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MyProductResponseDto {
-    private Long memberId;
-    private Long productId;
+    private Long id;
+    private String name;
+    private String imgUrl;
+    private String brand;
+    private String category;
+    private Integer price;
+
     private int cnt;
     private double rating;
     private String review;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 }
