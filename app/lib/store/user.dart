@@ -1,11 +1,3 @@
-import 'package:app/model/user.dart';
-import 'package:flutter/cupertino.dart';
-
-const ACCESS_TOKEN_KEY = 'ACCESS_TOKEN';
-const REFRESH_TOKEN_KEY = 'REFRESH_TOKEN';
-final Ip = "https://j10e106.p.ssafy.io/api"; //
-
-class User extends ChangeNotifier {
-  String? _token;
-  User? user;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:817bf82ca4670a076275c99938aaeaa666b15d1c0e83b5d67b62a2845a8897be
+size 1106
