@@ -8,9 +8,6 @@ import lombok.Getter;
 @Getter
 public class CommonCode {
 
-    // 부모코드
-    private int parentCode;
-
     // 공통코드
     @Id
     private int code;
