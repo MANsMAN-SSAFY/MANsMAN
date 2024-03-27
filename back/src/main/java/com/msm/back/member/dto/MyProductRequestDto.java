@@ -12,7 +12,6 @@ import java.time.LocalDateTime;
 public class MyProductRequestDto {
     private Long productId;
     private int cnt;
-    private int rating;
+    private double rating;
     private String review;
-    private LocalDateTime purchasedAt;
 }

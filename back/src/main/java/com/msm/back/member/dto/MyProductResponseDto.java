@@ -15,7 +15,7 @@ public class MyProductResponseDto {
     private Long memberId;
     private Long productId;
     private int cnt;
-    private int rating;
+    private double rating;
     private String review;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
