@@ -1,4 +1,4 @@
-package com.msm.back.common;
+package com.msm.back.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,25 +1,23 @@
 package com.msm.back.product.dto;
 
-import lombok.AllArgsConstructor;
+import java.util.List;
+
+import org.springframework.data.domain.Slice;
+
+import com.msm.back.db.entity.Product;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
-@Setter
+@NoArgsConstructor
 public class ProductListResponseDto {
+	private List<ProductListDto> data;
+	private boolean hasNextPage;
 
-	private Long id;
-	private String name;
-	private String imgUrl;
-	private String brand;
-	private String cat1;
-	private String cat2;
-	private String cat3;
-	private int avgRating;
-	private boolean isFavorite;
-	private int price;
-	private String capacity;
+	public ProductListResponseDto(List<ProductListDto> productListDtos, boolean hasNextPage) {
+		this.data = productListDtos;
+		this.hasNextPage = hasNextPage;
+
+	}
 }
