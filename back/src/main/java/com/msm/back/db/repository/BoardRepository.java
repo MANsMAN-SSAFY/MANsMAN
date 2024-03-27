@@ -10,6 +10,5 @@ public interface BoardRepository extends JpaRepository<Board, Long> {
     List<Board> findByMemberIdOrderByCreatedAtDesc(Long memberId);
 
     // 게시물 검색
-    List<Board> findByTitleContainingIgnoreCase(String keyword);
-
+    List<Board> findByTitleContaining(String keyword);
 }
