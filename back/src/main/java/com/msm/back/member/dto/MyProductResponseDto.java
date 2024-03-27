@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09b938163900b47e7a647b145effc60faad386bb9c6a5d820afb445a508d9faa
-size 530
+package com.msm.back.member.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class MyProductResponseDto {
+    private Long id;
+    private Long memberId;
+    private Long productId;
+    private int cnt;
+    private int rating;
+    private String review;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+}
