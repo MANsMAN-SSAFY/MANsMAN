@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -16,5 +17,5 @@ public class BoardRequestDto {
     private Long id;
     private String title;
     private String content;
-    private List<BoardImage> boardImageList;
+    private List<MultipartFile> img;
 }
