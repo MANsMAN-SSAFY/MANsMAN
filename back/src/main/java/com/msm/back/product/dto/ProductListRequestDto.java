@@ -12,9 +12,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ProductListRequestDto {
 
-	private String categoryCode;
+	private Integer categoryCode;
 
-	private Long LastId;
+	private Long lastId;
 
 	private Long pageSize;
 }
