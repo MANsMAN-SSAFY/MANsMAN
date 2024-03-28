@@ -12,4 +12,6 @@ public interface ProductCustom {
 	Slice<Product> findAll(ProductListRequestDto requestDto);
 
 	List<Product> findByPopularity();
+
+	List<Product> findByIdIn(List<Long> idList);
 }
