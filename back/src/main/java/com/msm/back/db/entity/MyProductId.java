@@ -9,10 +9,10 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-public class ScrapId implements Serializable {
+public class MyProductId implements Serializable {
 
     private Long member;
 
-    private Long board;
+    private Long product;
 
 }
