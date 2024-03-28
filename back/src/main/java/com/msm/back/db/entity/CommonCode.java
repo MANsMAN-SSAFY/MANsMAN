@@ -13,7 +13,7 @@ public class CommonCode {
     private int code;
 
     // 부모코드
-    private int parentCode;
+    private Integer parentCode;
 
     // 공통코드명
     private String codeName;
