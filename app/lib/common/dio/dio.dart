@@ -3,3 +3,5 @@
 // import 'package:provider/provider.dart';
 //
 // final dioProvider = Provider(create: create)
+
+final ip = '192.168.40.217';
