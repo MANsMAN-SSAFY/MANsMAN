@@ -17,4 +17,6 @@ public class ProductListRequestDto {
 	private Long lastId;
 
 	private int pageSize;
+
+	private String searchWord;
 }
