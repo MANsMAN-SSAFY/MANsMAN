@@ -1,12 +1,3 @@
-package com.msm.back.db.repository;
-
-import com.msm.back.db.entity.Member;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.Optional;
-
-public interface MemberRepository extends JpaRepository<Member, Long> {
-    Optional<Member> findByEmail(String email);
-
-    boolean existsByEmail(String email);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cfd69840092a613155a6b0959ef6af6b0b9aa880278c364ec05b5d1f8ec70774
+size 617
