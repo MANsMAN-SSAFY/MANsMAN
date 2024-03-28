@@ -12,6 +12,9 @@ public class CommonCode {
     @Id
     private int code;
 
+    // 부모코드
+    private int parentCode;
+
     // 공통코드명
     private String codeName;
 
