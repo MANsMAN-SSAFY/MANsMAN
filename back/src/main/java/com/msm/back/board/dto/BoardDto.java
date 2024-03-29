@@ -1,22 +1,3 @@
-package com.msm.back.board.dto;
-
-
-import com.msm.back.member.dto.ProfileResponseDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class BoardDto {
-    private Long id;
-    private String title;
-    private String content;
-    private ProfileResponseDto writer;
-    private Long viewCnt;
-    private Long likeCnt;
-    private Long commentCnt;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d34dbf157ad13041b96067db719c627d9dffc81c2690d5855aad0a35acfea6fd
+size 877
