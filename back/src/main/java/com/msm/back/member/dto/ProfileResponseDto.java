@@ -12,6 +12,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 public class ProfileResponseDto {
+    private Long id;
     private String email;
     private String nickname;
     private LocalDate birthday;
