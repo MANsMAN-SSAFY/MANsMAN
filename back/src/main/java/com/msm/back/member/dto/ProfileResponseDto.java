@@ -1,22 +1,3 @@
-package com.msm.back.member.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.time.LocalDate;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class ProfileResponseDto {
-    private Long id;
-    private String email;
-    private String nickname;
-    private LocalDate birthday;
-    private String imgUrl;
-    private boolean privacy;
-    private ReportDto report;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:86bee801e23bc8d1a2d37eb7c0f5850444d2dbab061b208e59a146f1846f2eca
+size 811
