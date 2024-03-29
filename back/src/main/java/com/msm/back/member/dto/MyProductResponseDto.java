@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @Data
 @Builder
 @AllArgsConstructor
@@ -22,4 +20,6 @@ public class MyProductResponseDto {
     private int cnt;
     private double rating;
     private String review;
+
+    private boolean privacy;
 }
