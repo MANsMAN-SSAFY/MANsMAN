@@ -14,6 +14,10 @@ public class ProductListRequestDto {
 
 	private Integer categoryCode;
 
+	private String skinType;
+
+	private String concern;
+
 	private Long lastId;
 
 	private int pageSize;
