@@ -1,6 +1,5 @@
 package com.msm.back.member.dto;
 
-import com.msm.back.db.entity.CommonCode;
 import com.msm.back.db.entity.SkinTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
