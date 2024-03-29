@@ -10,9 +10,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @EqualsAndHashCode
 public class ScrapId implements Serializable {
-
     private Long member;
-
     private Long board;
-
 }

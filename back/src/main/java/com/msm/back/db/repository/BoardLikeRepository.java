@@ -9,5 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface BoardLikeRepository extends JpaRepository<BoardLike, Long> {
+    boolean existsByBoardAndMember(Board board, Member member);
     BoardLike findByBoardAndMember(Board board, Member member);
 }
