@@ -4,4 +4,4 @@
 //
 // final dioProvider = Provider(create: create)
 
-const ip = '192.168.30.111';
+const ip = '192.168.219.104';
