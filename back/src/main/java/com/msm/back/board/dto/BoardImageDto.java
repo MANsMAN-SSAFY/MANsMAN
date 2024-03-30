@@ -1,16 +1,3 @@
-package com.msm.back.board.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class BoardImageDto {
-//    private Long id;
-    private String boardImgUrl;
-    private int displayOrder;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:281cbde8f4d8d1b139e850433d33cfedd0c5871155d351512774758646816443
+size 532
