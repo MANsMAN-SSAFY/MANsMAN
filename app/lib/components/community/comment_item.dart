@@ -1,19 +1,3 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-
-class CommentItem extends StatelessWidget {
-  final Map<String, dynamic> comment; // 수정: 'final' 키워드 추가
-
-  const CommentItem({super.key, required this.comment}); // 수정: 생성자 파라미터 수정
-
-  @override
-  Widget build(BuildContext context) {
-    print(comment);
-    return SizedBox(
-      height: 100,
-      child: Column(
-        children: [Text(comment['content'])],
-      ),
-    );
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:df8298721f00b562b4abe6fa1ec754132874a52780b3a4cd6ab9d2b74c7d2115
+size 7045
