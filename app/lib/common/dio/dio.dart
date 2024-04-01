@@ -1,7 +1,3 @@
-// import 'package:dio/dio.dart';
-// import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-// import 'package:provider/provider.dart';
-//
-// final dioProvider = Provider(create: create)
-
-const ip = '192.168.123.103';
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea65f354790fa39034282cd424d65d4949780570b8cfc1212f7e62e313c2eca5
+size 829
