@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.12
 COPY ./requirements.txt /requirements.txt
 RUN python -m pip install -U pip && pip install --no-cache-dir --upgrade -r /requirements.txt
 
