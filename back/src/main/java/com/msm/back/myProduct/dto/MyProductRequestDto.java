@@ -1,12 +1,13 @@
 package com.msm.back.myProduct.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class MyProductRequestDto {
     private Long memberId;
     private Long productId;
