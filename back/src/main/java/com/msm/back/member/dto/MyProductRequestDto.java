@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MyProductRequestDto {
+    private Long id;
     private Long productId;
     private int cnt;
     private double rating;
