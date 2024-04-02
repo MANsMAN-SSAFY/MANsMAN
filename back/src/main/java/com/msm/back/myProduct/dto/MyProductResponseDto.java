@@ -7,6 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @Builder
 public class MyProductResponseDto {
+    private Long id;
     private Long memberId;
     private Long productId;
     private int cnt;
