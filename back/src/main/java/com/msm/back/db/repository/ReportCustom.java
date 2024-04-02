@@ -1,8 +1,8 @@
 package com.msm.back.db.repository;
 
-import com.msm.back.report.dto.DailyReportResponseDto;
+import com.msm.back.report.dto.ReportResponseDto;
 import org.springframework.data.domain.Slice;
 
 public interface ReportCustom {
-    Slice<DailyReportResponseDto> findAll(Long lastId, int pageSize, Long currentMemberId);
+    Slice<ReportResponseDto> findAll(Long lastId, int pageSize, Long currentMemberId);
 }
