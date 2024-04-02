@@ -1,15 +1,3 @@
-import 'package:flutter/material.dart';
-
-class OtherReport extends StatefulWidget {
-  const OtherReport({super.key});
-
-  @override
-  State<OtherReport> createState() => _OtherReportState();
-}
-
-class _OtherReportState extends State<OtherReport> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e6540a11a2dc62727da552210c9f4886547f3ee19bf4c751ee4c189e114785c
+size 4240
