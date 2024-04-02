@@ -9,5 +9,5 @@ import java.time.LocalTime;
 @NoArgsConstructor
 public class ReportUpdateSleepRequestDto {
     private Long reportId;
-    private LocalTime sleep;
+    private double sleep;
 }
