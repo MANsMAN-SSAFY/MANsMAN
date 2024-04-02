@@ -8,4 +8,5 @@ class AppColors{
   static const iconBlack = Color(0xff49454F);
   static const red = Color(0xffFF0000);
   static const input_border = Color(0xFFF3F2F2);
+  static const lightBlue = Color(0xffADD8E6);
 }
