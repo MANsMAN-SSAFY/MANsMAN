@@ -1,7 +1,7 @@
 from sqlalchemy import *
 from sqlalchemy.orm import sessionmaker
 
-DB_URL = 'mysql+pymysql://ssafy:ssafy123$@localhost:3306/testdb'
+DB_URL = 'mysql+pymysql://ssafy:ssafy123$@localhost:3306/test'
 
 class engineconn:
 
