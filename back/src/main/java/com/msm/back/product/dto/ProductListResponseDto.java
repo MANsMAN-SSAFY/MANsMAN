@@ -1,27 +1,3 @@
-package com.msm.back.product.dto;
-
-import java.util.List;
-
-import org.springframework.data.domain.Slice;
-
-import com.msm.back.db.entity.Product;
-
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@NoArgsConstructor
-public class ProductListResponseDto {
-	private List<ProductListDto> data;
-	private boolean hasNextPage;
-	private Long lastId;
-
-	public ProductListResponseDto(List<ProductListDto> productListDtos, boolean hasNextPage) {
-		this.data = productListDtos;
-		this.hasNextPage = hasNextPage;
-		this.lastId = !productListDtos.isEmpty()?productListDtos.get(productListDtos.size()-1).getId():0;
-	}
-
-}
-//
+version https://git-lfs.github.com/spec/v1
+oid sha256:9746c53a38375d7c0d8ccf6f21966d2c3cde770b3c50981a7e6437154196cbc0
+size 643

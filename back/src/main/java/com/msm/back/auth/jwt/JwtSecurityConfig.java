@@ -1,23 +1,3 @@
-package com.msm.back.auth.jwt;
-
-import com.msm.back.db.repository.BlacklistRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.web.DefaultSecurityFilterChain;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
-// 직접 만든 TokenProvider 와 JwtFilter 를 SecurityConfig 에 적용할 때 사용
-@RequiredArgsConstructor
-public class JwtSecurityConfig extends SecurityConfigurerAdapter<DefaultSecurityFilterChain, HttpSecurity> {
-    private final TokenProvider tokenProvider;
-    private final BlacklistRepository blacklistRepository;
-
-    // TokenProvider 를 주입받아서 JwtFilter 를 통해 Security 로직에 필터를 등록
-    @Override
-    public void configure(HttpSecurity http) {
-        JwtFilter customFilter = new JwtFilter(tokenProvider, blacklistRepository);
-        http.addFilterBefore(customFilter, UsernamePasswordAuthenticationFilter.class);
-    }
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d14f292fa69ff30cb301ae9f5b3a0acb3ce32e4d55c0c155c540ba2122cd0cf
+size 1120

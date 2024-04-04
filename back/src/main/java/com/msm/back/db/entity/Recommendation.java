@@ -1,33 +1,3 @@
-package com.msm.back.db.entity;
-
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Getter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@Entity
-public class Recommendation {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-
-	@ManyToOne
-	@JoinColumn(name = "category_code")
-	private CommonCode type;
-
-	private String name;
-	private String bio;
-	private String imageUrl;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d834d0b6f6a9976f9c339d7c437b0914211cef65ba5f12a21bde200dd62c865
+size 695

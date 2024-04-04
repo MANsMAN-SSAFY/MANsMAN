@@ -1,23 +1,3 @@
-package com.msm.back.member.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import java.time.LocalDateTime;
-
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class BoardResponseDto2 {
-    private Long id;
-    private String title;
-    private String content;
-    private Long viewCnt;
-    private Long commentCnt;
-    private Long likeCnt;
-    private ProfileResponseDto writer; // 게시글 작성자 정보
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2dc5bd1e109e0784b802606ba6d8e85e7646869049d2f2feff8aa36128a5071d
+size 564

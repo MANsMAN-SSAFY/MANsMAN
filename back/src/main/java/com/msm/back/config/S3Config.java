@@ -1,35 +1,3 @@
-package com.msm.back.config;
-
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.AWSStaticCredentialsProvider;
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-public class S3Config {
-    @Value("${cloud.aws.credentials.accessKey}")
-    private String accessKey;
-
-    @Value("${cloud.aws.credentials.secretKey}")
-    private String secretKey;
-
-    @Value("${cloud.aws.s3.bucketName}")
-    private String bucketName;
-
-    @Value("${cloud.aws.region.static}")
-    private String region;
-
-    @Bean
-    public AmazonS3 s3Builder() {
-        AWSCredentials awsCredentials = new BasicAWSCredentials(accessKey, secretKey);
-
-        return AmazonS3ClientBuilder.standard()
-                .withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
-                .withRegion(region)
-                .build();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec8f58d1337d04b1710d1a1791861bcd0e40d7ad31c31080cc8eea9164ae6c6e
+size 1120

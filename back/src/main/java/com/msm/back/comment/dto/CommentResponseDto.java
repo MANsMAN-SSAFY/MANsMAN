@@ -1,25 +1,3 @@
-package com.msm.back.comment.dto;
-
-
-import com.msm.back.member.dto.ProfileResponseDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
-
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class CommentResponseDto {
-    private Long id;
-    private String content;
-    private ProfileResponseDto writer;
-    private Long likeCnt;
-    private boolean isLike;
-
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5f4c9b2d65220d4b374431d75888327563f0db5723d036c329c4e827f7569be
+size 537
