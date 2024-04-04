@@ -1,19 +1,3 @@
-package com.msm.back;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-import org.springframework.scheduling.annotation.EnableScheduling;
-
-@SpringBootApplication
-@EnableJpaAuditing
-@EnableScheduling
-@EnableCaching
-public class BackApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(BackApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:90b75963475b62e641371dbb7e855c22c40bb6ea8f462cfd7f5c753252f64731
+size 552
