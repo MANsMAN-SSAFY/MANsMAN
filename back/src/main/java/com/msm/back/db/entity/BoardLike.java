@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd6ea93be59871d346b93255b6f4eca4fc73578e2e4cab782096809917f3cfd4
-size 667
+package com.msm.back.db.entity;
+
+import com.msm.back.common.BaseEntity;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.domain.Persistable;
+
+@Entity
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class BoardLike extends BaseEntity {
+    @EmbeddedId
+    private BoardLikeId id;
+
+    @MapsId("memberId")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "member_id")
+    private Member member;
+
+    @MapsId("boardId")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "board_id")
+    private Board board;
+}

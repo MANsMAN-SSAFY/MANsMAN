@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:253c80aa37abdb5c02e4f1d3efcdc1b54ec18fa543ee8f9d8a561c11286aba20
-size 556
+package com.msm.back.member.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class MyProductResponseDto {
+    private Long id;
+    private Long productId;
+    private String name;
+    private String imgUrl;
+    private String brand;
+    private String category;
+    private Integer price;
+
+    private int cnt;
+    private double rating;
+    private String review;
+
+    private boolean isActive;
+    private boolean privacy;
+}

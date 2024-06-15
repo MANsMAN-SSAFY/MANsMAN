@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e59797624df835c3052b03167d99bd5abfb96ad97837e0c7ec064c0747a869f
-size 663
+{
+  "project_info": {
+    "project_number": "333765243736",
+    "project_id": "mansman-fa054",
+    "storage_bucket": "mansman-fa054.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333765243736:android:8426089ab0e09c60e4eb2d",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPWwMXMXaVHz8Ro9dS1kRpA-Y_GkXIe6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

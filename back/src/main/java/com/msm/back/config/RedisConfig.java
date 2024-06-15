@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:370997acadd6db0addc88cffc92acac02f95eed5b4abada77cf995e7bbb70cf4
-size 1669
+package com.msm.back.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.GenericToStringSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
+
+@EnableCaching
+@Configuration
+public class RedisConfig {
+	//
+	@Value("${spring.data.redis.host}")
+	private String host;
+
+	@Value("${spring.data.redis.port}")
+	private String port;
+
+	// @Value("${spring.data.redis.password}")
+	// private String password;
+
+	@Bean
+	public RedisConnectionFactory redisConnectionFactory() {
+		RedisStandaloneConfiguration redisStandaloneConfiguration = new RedisStandaloneConfiguration();
+		redisStandaloneConfiguration.setHostName(host);
+		redisStandaloneConfiguration.setPort(Integer.parseInt(port));
+        return new LettuceConnectionFactory(redisStandaloneConfiguration);
+	}
+
+	@Bean
+	public RedisTemplate<String, Object> redisTemplate() {
+		RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
+		redisTemplate.setConnectionFactory(redisConnectionFactory());
+		redisTemplate.setKeySerializer(new StringRedisSerializer());
+		redisTemplate.setValueSerializer(new StringRedisSerializer());
+		return redisTemplate;
+	}
+
+}
