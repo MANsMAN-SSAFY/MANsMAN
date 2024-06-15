@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d3704bedb938a6c0e4beb644cd6d78606a2811de03539e40d33226f71bc76f2
-size 831
+package com.msm.back.db.entity;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.msm.back.common.BaseEntity;
+import com.msm.back.tag.dto.TagResponseDto;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class Tag extends BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @JsonBackReference
+    @ManyToOne
+    @JoinColumn(name="report_id")
+    private Report report;
+
+    private String content;
+
+    private String color;
+
+    public TagResponseDto toTagResponseDto() {
+        return TagResponseDto.builder().tagId(id).reportId(report.getId()).content(content).color(color).build();
+    }
+}

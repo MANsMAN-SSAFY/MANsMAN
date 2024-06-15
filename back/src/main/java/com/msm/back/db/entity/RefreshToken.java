@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dee53df424613c8aadab77fcf8b68fb337f0c788bfc974ba5aaf63e526da2e82
-size 630
+package com.msm.back.db.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Getter
+@NoArgsConstructor
+@Entity
+public class RefreshToken {
+
+    @Id
+    @Column(name = "rt_key")
+    private String key;
+
+    @Column(name = "rt_value")
+    private String value;
+
+    @Builder
+    public RefreshToken(String key, String value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public RefreshToken updateValue(String token) {
+        this.value = token;
+        return this;
+    }
+}

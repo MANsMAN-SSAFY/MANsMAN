@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87e722b3d672bfde163d435c831d460ec4226e3de0f11a27cf8fdb52e660877a
-size 1188
+package com.msm.back.config;
+
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+import com.google.firebase.messaging.FirebaseMessaging;
+import jakarta.annotation.PostConstruct;
+import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
+
+import java.io.FileInputStream;
+
+@Configuration
+public class FirebaseConfig {
+    private FirebaseApp firebaseApp;
+
+    @PostConstruct
+    public void init(){
+        try{
+            ClassPathResource resource = new ClassPathResource("serviceAccountKey.json");
+
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                .setCredentials(GoogleCredentials.fromStream(resource.getInputStream()))
+                .build();
+
+            firebaseApp = FirebaseApp.initializeApp(options);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    @Bean
+    public FirebaseMessaging initFirebaseMessaging() {
+        return FirebaseMessaging.getInstance(firebaseApp);
+    }
+
+
+}

@@ -1,3 +1,52 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6352dd154078d20388917526d3cee34980295af33159cd5efb413b1c4c2fb8a
-size 4461
+-- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
+--
+-- Host: 3.38.101.110    Database: test
+-- ------------------------------------------------------
+-- Server version	8.3.0
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `common_code`
+--
+
+DROP TABLE IF EXISTS `common_code`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `common_code` (
+  `code` int NOT NULL,
+  `code_name` varchar(255) DEFAULT NULL,
+  `parent_code` int DEFAULT NULL,
+  PRIMARY KEY (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `common_code`
+--
+
+LOCK TABLES `common_code` WRITE;
+/*!40000 ALTER TABLE `common_code` DISABLE KEYS */;
+INSERT INTO `common_code` VALUES (100,'스킨케어',0),(200,'헤어케어',0),(300,'마스크팩',0),(400,'얼굴형',0),(40001,'동그란 얼굴',400),(40002,'직사각형 얼굴',400),(40003,'하트 얼굴',400),(40004,'정사각형 얼굴',400),(40005,'타원형 얼굴',400),(100000,'전체',100),(100100,'스킨/토너',100),(100200,'에센스/세럼/앰플',100),(100300,'크림',100),(100400,'로션',100),(100500,'미스트/오일',100),(100600,'스킨케어세트',100),(200100,'샴푸/린스',200),(200200,'트리트먼트/팩',200),(200300,'헤어에센스',200),(200400,'염색약/펌',200),(200500,'헤어기기/브러시',200),(200600,'스타일링',200),(300100,'시트팩',300),(300200,'패드',300),(300300,'페이셜팩',300),(300400,'코팩',300),(300500,'패치',300),(10010000,'전체',100100),(10010001,'스킨/토너',100100),(10020000,'전체',100200),(10020001,'에센스/세럼/앰플',100200),(10030000,'전체',100300),(10030001,'크림',100300),(10030002,'아이크림',100300),(10040000,'전체',100400),(10040001,'로션',100400),(10040002,'올인원',100400),(10050000,'전체',100500),(10050001,'미스트/픽서',100500),(10050002,'페이스오일',100500),(10060000,'전체',100600),(10060001,'스킨케어세트',100600),(20010000,'전체',200100),(20010001,'샴푸',200100),(20010002,'린스/컨디셔너',200100),(20010003,'샴푸바/드라이샴푸',200100),(20020000,'전체',200200),(20020001,'헤어팩/마스크',200200),(20020002,'헤어 트리트먼트',200200),(20020003,'두피팩/스케일러',200200),(20020004,'노워시 트리트먼트',200200),(20030000,'전체',200300),(20030001,'헤어워터',200300),(20030002,'헤어오일/헤어세럼',200300),(20030003,'헤어토닉/두피토닉',200300),(20040000,'전체',200400),(20040001,'컬러염색/새치염색',200400),(20040002,'헤어메이크업',200400),(20040003,'탈색/파마',200400),(20050000,'전체',200500),(20050001,'고데기',200500),(20050002,'드라이기',200500),(20050003,'헤어 브러시',200500),(20060000,'전체',200600),(20060001,'컬크림/컬링에센스',200600),(20060002,'왁스/젤/무스/토닉',200600),(20060003,'스프레이/픽서',200600),(30010000,'전체',300100),(30010001,'시트팩',300100),(30020000,'전체',300200),(30020001,'패드',300200),(30030000,'전체',300300),(30030001,'워시오프팩',300300),(30030002,'슬리핑팩',300300),(30030003,'모델링팩/필오프팩',300300),(30040000,'전체',300400),(30040001,'코팩',300400),(30050000,'전체',300500),(30050001,'패치',300500);
+/*!40000 ALTER TABLE `common_code` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-04-04 11:25:14

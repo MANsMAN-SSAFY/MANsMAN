@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:633fa40496d3988c0b46eea300d22bfbdfb5e7bdb5d71c4685bb2a38afe1fc90
-size 519
+package com.msm.back.db.repository;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.msm.back.db.entity.Favorite;
+import com.msm.back.db.entity.Member;
+import com.msm.back.db.entity.Product;
+
+public interface FavoriteRepository extends JpaRepository<Favorite, Long>{
+
+	boolean existsByMemberAndProduct(Member member, Product product);
+
+	boolean existsByMemberIdAndProductId(Long id, Long id1);
+
+	List<Favorite> findByMember(Member member);
+}

@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13e3f21be911d05ac37d958a9d8f1e3c70c9774a0e2cd3cb023433b2f0ebb59b
-size 658
+package com.msm.back.db.entity;
+
+import com.msm.back.mask.dto.MaskResponseDto;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Entity
+@Builder
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Mask {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
+    @JoinColumn(name="member_id")
+    private Member member;
+
+    private LocalDate usedAt;
+
+    public MaskResponseDto toMaskResponseDto() {
+        return MaskResponseDto.builder().id(id).usedAt(usedAt).build();
+    }
+}

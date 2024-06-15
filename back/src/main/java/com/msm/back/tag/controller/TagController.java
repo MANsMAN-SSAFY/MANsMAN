@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:10db53bdce4c219b69a3f6a5f851c4a0d9ae3b33e7998d9bd2e73f6e9dcaeae1
-size 958
+package com.msm.back.tag.controller;
+
+import com.msm.back.tag.dto.TagRequestDto;
+import com.msm.back.tag.dto.TagResponseDto;
+import com.msm.back.tag.service.TagService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/api/tags")
+public class TagController {
+
+    private final TagService tagService;
+    @PostMapping("")
+    public ResponseEntity<TagResponseDto> saveTag(@RequestBody TagRequestDto tagRequestDto) {
+        TagResponseDto tagResponseDto = tagService.saveTag(tagRequestDto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(tagResponseDto);
+    }
+
+    @DeleteMapping("/{tagId}")
+    public ResponseEntity<Void> deleteTag(@PathVariable Long tagId) {
+        tagService.deleteTag(tagId);
+        return ResponseEntity.ok().build();
+    }
+}
